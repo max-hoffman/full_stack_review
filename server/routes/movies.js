@@ -3,12 +3,19 @@ const db = require('../models');
 module.exports = {
   getMoviesCtrl: (req, res) => {
     //query database
-    // res.send(movies);
+    db.Movie.getAll()
+    .then(movies => {
+      console.log('get movies', movies);
+      res.send(movies);
+    });
     console.log('get endpoint');
   },
   postMovieCtrl: (req, res) => {
     //add to database
-    // res.send(movie);
-    console.log('post endpoint');
+    db.Movie.create(req.body)
+    .then(movie => {
+      console.log('post movie', movie);
+      res.send(movie);
+    });
   }
 }

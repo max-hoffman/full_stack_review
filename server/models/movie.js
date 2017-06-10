@@ -2,8 +2,8 @@
 module.exports = function(sequelize, DataTypes) {
   var Movie = sequelize.define('Movie', {
     title: DataTypes.STRING,
-    copies: DataTypes.INT,
-    rating: DataTypes.INT
+    copies: DataTypes.INTEGER,
+    rating: DataTypes.INTEGER
   }, {
     underscored: true,
     classMethods: {
