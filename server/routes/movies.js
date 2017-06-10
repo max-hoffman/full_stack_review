@@ -3,7 +3,7 @@ const db = require('../models');
 module.exports = {
   getMoviesCtrl: (req, res) => {
     //query database
-    db.Movie.getAll()
+    db.Movie.findAll()
     .then(movies => {
       console.log('get movies', movies);
       res.send(movies);
