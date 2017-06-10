@@ -1,9 +1,10 @@
 {
   "name": "full_stack_review",
   "version": "1.0.0",
-  "description": "",
+  "description": "In this fullstack review application, we will be bringing Blockbuster back from the dead. You will be setting up a server and a database, creating a RESTful API for their inventory, and rendering views on the front end to see the data.",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon server/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,9 +18,12 @@
   },
   "homepage": "https://github.com/reginavlee/full_stack_review#readme",
   "dependencies": {
-
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "morgan": "^1.8.2",
+    "mysql": "^2.13.0",
+    "mysql2": "^1.3.3",
+    "sequelize": "^4.0.0"
   },
-  "devDependencies": {
-
-  }
+  "devDependencies": {}
 }
