@@ -1,9 +1,12 @@
 .movie {
   margin: 10px;
   padding: 10px;
-  outline: solid 2px blue;
-  -moz-border-radius:24px; 
-  -webkit-border-radius: 24px;
-  border-radius: 24px;
-  display:block;
+  list-style: none;
+}
+
+.movie-maker {
+  margin: 10px;
+  padding: 10px;
+  display: table-cell;
+  vertical-align: middle;
 }

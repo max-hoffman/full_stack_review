@@ -7,7 +7,6 @@ angular.module("movie-displayer")
     fetch: () => {
       $http.get('/movies')
       .then(results => {
-        console.log('fetched', results);
         movies = results.data;
       });
     },

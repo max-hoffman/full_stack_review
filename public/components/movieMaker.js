@@ -13,9 +13,6 @@ angular.module("movie-displayer")
       movie: '@',
       createMovie: '<'
     },
-    restrict: 'E',
-    link: function(s,e,a,c) {
-      console.log(c);
-    }
+    restrict: 'E'
   };
 })
