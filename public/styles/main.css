@@ -1,0 +1,9 @@
+.movie {
+  margin: 10px;
+  padding: 10px;
+  outline: solid 2px blue;
+  -moz-border-radius:24px; 
+  -webkit-border-radius: 24px;
+  border-radius: 24px;
+  display:block;
+}
